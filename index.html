@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Rose After Dark | Riley Rose</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #0b0809;
+            color: #eee6e3;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #0b0809;
+            border-bottom: 1px solid #332426;
+        }
+
+        .logo {
+            font-size: 22px;
+            letter-spacing: 2px;
+            color: #d7a3a3;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #eee6e3;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d7a3a3;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                radial-gradient(circle at center,
+                #30171c 0%,
+                #140d0f 45%,
+                #0b0809 75%);
+        }
+
+        .rose-symbol {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 85px);
+            font-weight: normal;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 19px;
+            font-weight: normal;
+            font-style: italic;
+            color: #d7a3a3;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #bdb3b1;
+            font-size: 17px;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 30px;
+            border: 1px solid #b8757b;
+            color: #eee6e3;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #b8757b;
+            color: #0b0809;
+        }
+
+        /* FEATURED STORY */
+        .featured {
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 35px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #a99c9a;
+            margin-bottom: 45px;
+        }
+
+        .story-card {
+            max-width: 800px;
+            margin: auto;
+            padding: 45px;
+            border: 1px solid #332426;
+            background: #110c0e;
+        }
+
+        .story-card h3 {
+            font-size: 32px;
+            font-weight: normal;
+            color: #d7a3a3;
+            margin-bottom: 15px;
+        }
+
+        .story-card p {
+            color: #bdb3b1;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 5px 12px;
+            border: 1px solid #4b3034;
+            color: #c99498;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 90px 8%;
+            background: #100b0d;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            color: #bdb3b1;
+            font-size: 17px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            border-top: 1px solid #332426;
+            color: #766b69;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #b8757b;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .story-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <div class="logo">
+            RILEY ROSE
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO / HOME -->
+    <section class="hero" id="home">
+
+        <div class="rose-symbol">🌹</div>
+
+        <h1>The Rose After Dark</h1>
+
+        <h2>Stories of love, longing, secrets & shadows.</h2>
+
+        <p>
+            Welcome to the world of Riley Rose —
+            where beautiful things aren't always innocent,
+            and every love story has a darker page.
+        </p>
+
+        <a href="#stories" class="button">
+            START READING
+        </a>
+
+    </section>
+
+
+    <!-- FEATURED STORIES -->
+    <section class="featured" id="stories">
+
+        <h2 class="section-title">
+            Featured Story
+        </h2>
+
+        <p class="section-subtitle">
+            Enter a story and stay until the last page.
+        </p>
+
+
+        <div class="story-card">
+
+            <span class="tag">
+                Dark Romance
+            </span>
+
+            <h3>
+                Your Story Title
+            </h3>
+
+            <p>
+                A mysterious beginning. A dangerous attraction.
+                And two people who were never supposed to fall for each other.
+            </p>
+
+            <a href="#" class="button">
+                READ STORY
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2 class="section-title">
+            About Riley Rose
+        </h2>
+
+        <p>
+            Riley Rose writes stories about complicated hearts,
+            impossible choices, hidden feelings and the beautiful
+            darkness that exists between the lines.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 The Rose After Dark · Written by
+        <span>Riley Rose</span>
+
+    </footer>
+
+</body>
+</html>
