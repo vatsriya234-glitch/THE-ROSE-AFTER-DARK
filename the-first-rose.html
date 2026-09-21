@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,120 +8,452 @@
 <title>The First Rose | Riley Rose</title>
 
 <style>
-body {
+
+* {
     margin: 0;
     padding: 0;
-    background: #0d0b0c;
-    color: #eee;
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.8;
+    box-sizing: border-box;
 }
 
-.story {
-    max-width: 750px;
-    margin: auto;
-    padding: 70px 25px;
+body {
+    background: #0b090a;
+    color: #eee5e6;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.9;
+}
+
+/* NAVIGATION */
+
+nav {
+    padding: 24px 8%;
+    border-bottom: 1px solid #30282a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d99a9f;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d99a9f;
+}
+
+
+/* STORY HEADER */
+
+.story-header {
+    text-align: center;
+    padding: 80px 20px 55px;
 }
 
 .rose {
-    font-size: 45px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-.status {
-    color: #d99aa5;
+.label {
+    color: #d99a9f;
     letter-spacing: 4px;
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 18px;
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 52px;
+    color: #f5dddd;
+    margin-bottom: 12px;
 }
 
 .subtitle {
-    color: #c9b5b8;
+    color: #a99a9d;
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+
+/* STORY CONTENT */
+
+.story {
+    max-width: 760px;
+    margin: auto;
+    padding: 20px 25px 90px;
+}
+
+.chapter {
+    color: #d99a9f;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 17px;
+    margin-bottom: 45px;
 }
 
 .story p {
     font-size: 18px;
-    color: #d8d0d2;
+    color: #d6ccce;
+    margin-bottom: 27px;
+}
+
+.first-letter {
+    font-size: 60px;
+    float: left;
+    line-height: 45px;
+    padding-right: 8px;
+    color: #d99a9f;
 }
 
 .divider {
-    margin: 45px 0;
-    border: 0;
-    border-top: 1px solid #40383b;
+    text-align: center;
+    color: #9d6269;
+    margin: 50px 0;
+    font-size: 22px;
 }
 
-.back {
-    color: #d99aa5;
+
+/* CHAPTER NAVIGATION */
+
+.chapter-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.chapter-button {
+    border: 1px solid #70434b;
+    padding: 13px 26px;
+    color: #eee;
     text-decoration: none;
 }
+
+.chapter-button:hover {
+    background: #1b1416;
+    border-color: #d99a9f;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #30282a;
+    text-align: center;
+    padding: 30px;
+    color: #766b6d;
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 39px;
+    }
+
+    .story-header {
+        padding-top: 60px;
+    }
+
+    .story {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .story p {
+        font-size: 17px;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        RILEY ROSE
+    </div>
+
+    <a href="stories.html">
+        ← Stories
+    </a>
+
+</nav>
+
+
+<!-- STORY TITLE -->
+
+<header class="story-header">
+
+    <div class="rose">
+        🌹
+    </div>
+
+    <div class="label">
+        A RILEY ROSE STORY
+    </div>
+
+    <h1>
+        The First Rose
+    </h1>
+
+    <p class="subtitle">
+        Some stories begin with a beautiful lie.
+    </p>
+
+</header>
+
+
+<!-- CHAPTER -->
+
 <main class="story">
 
-<div class="rose">🌹</div>
+    <div class="chapter">
+        CHAPTER ONE
+    </div>
 
-<div class="status">THE FIRST ROSE</div>
 
-<h1>The First Rose</h1>
+    <p>
+        <span class="first-letter">T</span>he rain had been falling since sunset.
+    </p>
 
-<p class="subtitle">
-Some stories begin with a beautiful lie.<br>
-Some secrets are better left buried.
-</p>
+    <p>
+        By midnight, the streets were almost empty.
+        The city looked different beneath the rain—quieter,
+        colder, almost as if it were hiding something.
+    </p>
 
-<hr class="divider">
+    <p>
+        Riley Rose stood beneath an old streetlamp,
+        staring at the building across the road.
+    </p>
 
-<p>
-The night was quieter than usual.
-</p>
+    <p>
+        It was her first week in the city.
+    </p>
 
-<p>
-Riley Rose had always believed that some memories were meant to
-fade with time. She was wrong.
-</p>
+    <p>
+        Her first week at a new college.
+        Her first week in a place where nobody knew her,
+        nobody knew her family, and nobody knew the things
+        she had spent years trying not to remember.
+    </p>
 
-<p>
-It began with a rose.
-</p>
+    <div class="divider">
+        ❦
+    </div>
 
-<p>
-Not the kind given in daylight, wrapped carefully in paper and tied
-with a ribbon. This one appeared after midnight, waiting silently
-where no one should have been.
-</p>
+    <p>
+        She had promised herself that this would be a new beginning.
+    </p>
 
-<p>
-There was no name attached to it.
-No explanation.
-Only a small note.
-</p>
+    <p>
+        No looking back.
+        No questions about her mother.
+        No searching through old photographs.
+        No wondering why certain names were never spoken inside
+        their house.
+    </p>
 
-<p>
-<i>"Some truths are beautiful until you discover why they were hidden."</i>
-</p>
+    <p>
+        Especially not one name.
+    </p>
 
-<p>
-Riley stared at the words for a long moment.
-Then she heard a knock at the door.
-</p>
+    <p>
+        <i>Elias Vale.</i>
+    </p>
 
-<p>
-And suddenly, the past wasn't buried anymore.
-</p>
+    <p>
+        Riley didn't know who Elias Vale was.
+        Not really.
+    </p>
 
-<hr class="divider">
+    <p>
+        She only knew that whenever she had asked her mother
+        about him, the answer had always been the same.
+    </p>
 
-<a class="back" href="stories.html">← Back to Stories</a>
+    <p>
+        "Some people belong in the past."
+    </p>
+
+    <p>
+        Riley had never understood what that meant.
+    </p>
+
+    <p>
+        Until tonight.
+    </p>
+
+    <div class="divider">
+        ❦
+    </div>
+
+    <p>
+        Earlier that evening, Riley had stopped at a small
+        second-hand bookstore near the college.
+    </p>
+
+    <p>
+        She had bought an old book because she liked the smell
+        of its pages.
+    </p>
+
+    <p>
+        She hadn't expected anything to be inside it.
+    </p>
+
+    <p>
+        But when she opened it later that night,
+        something fell onto the floor.
+    </p>
+
+    <p>
+        A dried red rose.
+    </p>
+
+    <p>
+        Riley picked it up carefully.
+    </p>
+
+    <p>
+        A small black ribbon had been tied around its stem.
+    </p>
+
+    <p>
+        And underneath the ribbon was a folded piece of paper.
+    </p>
+
+    <p>
+        Her fingers hesitated before opening it.
+    </p>
+
+    <p>
+        There was only one sentence.
+    </p>
+
+    <p style="text-align: center; color: #d99a9f;">
+        <i>
+            "If you found this, he hasn't forgotten."
+        </i>
+    </p>
+
+    <p>
+        Riley read it twice.
+    </p>
+
+    <p>
+        Then a third time.
+    </p>
+
+    <p>
+        Her heart began beating faster.
+    </p>
+
+    <p>
+        She didn't know who "he" was.
+    </p>
+
+    <p>
+        But somehow, she already knew the answer.
+    </p>
+
+    <div class="divider">
+        ❦
+    </div>
+
+    <p>
+        Riley turned the paper over.
+    </p>
+
+    <p>
+        Nothing.
+    </p>
+
+    <p>
+        She turned the rose in her hand.
+    </p>
+
+    <p>
+        And that's when she noticed the tiny initials
+        written beneath the ribbon.
+    </p>
+
+    <p style="text-align: center; color: #d99a9f;">
+        <i>
+            E.V.
+        </i>
+    </p>
+
+    <p>
+        Riley stopped breathing for a moment.
+    </p>
+
+    <p>
+        Outside, thunder rolled across the city.
+    </p>
+
+    <p>
+        Somewhere in the distance, a clock struck midnight.
+    </p>
+
+    <p>
+        And Riley finally understood one thing.
+    </p>
+
+    <p>
+        Her mother hadn't been telling her the whole story.
+    </p>
+
+    <div class="divider">
+        ❦
+    </div>
+
+    <p style="text-align: center; color: #d99a9f;">
+        <i>
+            Some stories begin with a beautiful lie.
+        </i>
+    </p>
+
+
+    <!-- CHAPTER BUTTONS -->
+
+    <div class="chapter-navigation">
+
+        <a class="chapter-button" href="stories.html">
+            ← Back to Stories
+        </a>
+
+    </div>
 
 </main>
 
+
+<footer>
+
+    © 2026 Riley Rose · The Rose After Dark
+
+</footer>
+
+
 </body>
+
 </html>
