@@ -1,23 +1,257 @@
-<!-- COMING SOON SECTION -->
-<section class="coming-soon" id="stories">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="coming-soon-content">
+<title>Stories | Riley Rose</title>
 
-        <div class="rose-icon">🌹</div>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <span class="coming-label">COMING SOON</span>
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #0b090a;
+    color: #f5eeee;
+    line-height: 1.6;
+}
 
-        <h2>A New Story Is Waiting in the Shadows</h2>
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    border-bottom: 1px solid #30282a;
+}
 
-        <p>
-            The first story by <strong>Riley Rose</strong>
-            will appear here soon.
-        </p>
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #d99a9f;
+}
 
-        <p class="small-text">
-            Until then, the pages remain quietly waiting...
-        </p>
+nav a {
+    color: #eee;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #d99a9f;
+}
+
+/* PAGE HEADER */
+.header {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.rose {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 52px;
+    color: #f4dddd;
+    margin-bottom: 15px;
+}
+
+.header p {
+    color: #bcaeb0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* STORIES */
+.stories {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 25px 90px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #151112;
+    border: 1px solid #352b2d;
+    padding: 35px 25px;
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #9d6269;
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.status {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #d99a9f;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b9afb0;
+    font-size: 15px;
+}
+
+.coming {
+    margin-top: 25px;
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #30282a;
+    color: #766b6d;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .stories {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">RILEY ROSE</div>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="stories.html">Stories</a>
+    </div>
+</nav>
+
+<section class="header">
+
+    <div class="rose">🌹</div>
+
+    <h1>Stories</h1>
+
+    <p>Love, longing, secrets & shadows.</p>
+
+</section>
+
+
+<section class="stories">
+
+    <!-- STORY 1 -->
+    <div class="card">
+
+        <div>
+            <div class="card-icon">🥀</div>
+
+            <span class="status">COMING SOON</span>
+
+            <h2>The First Rose</h2>
+
+            <p>
+                Some stories begin with a beautiful lie.
+                Some secrets are better left buried.
+            </p>
+        </div>
+
+        <div class="coming">
+            A Riley Rose story
+        </div>
+
+    </div>
+
+
+    <!-- STORY 2 -->
+    <div class="card">
+
+        <div>
+            <div class="card-icon">🌙</div>
+
+            <span class="status">COMING SOON</span>
+
+            <h2>After Midnight</h2>
+
+            <p>
+                When the night falls, hidden truths begin
+                to find their way into the light.
+            </p>
+        </div>
+
+        <div class="coming">
+            A Riley Rose story
+        </div>
+
+    </div>
+
+
+    <!-- STORY 3 -->
+    <div class="card">
+
+        <div>
+            <div class="card-icon">🖤</div>
+
+            <span class="status">COMING SOON</span>
+
+            <h2>Beautiful Secrets</h2>
+
+            <p>
+                Everyone has a secret.
+                Hers just happens to be impossible to forget.
+            </p>
+        </div>
+
+        <div class="coming">
+            A Riley Rose story
+        </div>
 
     </div>
 
 </section>
+
+
+<footer>
+    © 2026 Riley Rose · The Rose After Dark
+</footer>
+
+</body>
+</html>
